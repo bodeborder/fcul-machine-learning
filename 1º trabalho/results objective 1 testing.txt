@@ -1,0 +1,200 @@
+Decision Tree Regressor with max_depth = 1
+
+The RVE is:  0.5309561096889127
+The rmse is:  23.408991355354622
+The Correlation Score is is: 0.7287 (p-value=0.000000e+00)
+
+The Maximum Error is:  175.52505396018637
+The Mean Absolute Error is:  17.463968091943016 
+
+
+Decision Tree Regressor with max_depth = 4
+
+The RVE is:  0.7313332994013582
+The rmse is:  17.716759232767046
+The Correlation Score is is: 0.8552 (p-value=0.000000e+00)
+
+The Maximum Error is:  162.53771649484537
+The Mean Absolute Error is:  12.248681863956374 
+
+
+Decision Tree Regressor with max_depth = 7
+
+The RVE is:  0.8066077210526179
+The rmse is:  15.03126644865506
+The Correlation Score is is: 0.8982 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  9.70794534845227 
+
+
+Decision Tree Regressor with max_depth = 10
+
+The RVE is:  0.8462780036357106
+The rmse is:  13.401215415262667
+The Correlation Score is is: 0.9204 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  8.025890849388649 
+
+
+Decision Tree Regressor with max_depth = 13
+
+The RVE is:  0.8684003412975487
+The rmse is:  12.399477161978455
+The Correlation Score is is: 0.9326 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.9568995601949934 
+
+
+Decision Tree Regressor with max_depth = 16
+
+The RVE is:  0.8711865395135652
+The rmse is:  12.267561063721558
+The Correlation Score is is: 0.9348 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.504779186139803 
+
+
+Decision Tree Regressor with max_depth = 19
+
+The RVE is:  0.86581758612548
+The rmse is:  12.520741078703898
+The Correlation Score is is: 0.9323 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.465182047590848 
+
+
+Decision Tree Regressor with max_depth = 22
+
+The RVE is:  0.8670927574751923
+The rmse is:  12.461147543611672
+The Correlation Score is is: 0.9329 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.453214400379504 
+
+
+Decision Tree Regressor with max_depth = 25
+
+The RVE is:  0.8747781729810158
+The rmse is:  12.095753025436753
+The Correlation Score is is: 0.9369 (p-value=0.000000e+00)
+
+The Maximum Error is:  168.0
+The Mean Absolute Error is:  6.333937827824639 
+
+
+Decision Tree Regressor with max_depth = 28
+
+The RVE is:  0.8701162602086987
+The rmse is:  12.318409650749675
+The Correlation Score is is: 0.9344 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.386343708218812 
+
+--------------------------------------------------------------------
+With one stopping criteria min_samples_leaf kfold splits = 10
+
+Decision Tree Regressor with min_samples_leaf = 1
+
+The RVE is:  0.8672337444573299
+The rmse is:  12.454364352022552
+The Correlation Score is is: 0.9330 (p-value=0.000000e+00)
+
+The Maximum Error is:  184.35
+The Mean Absolute Error is:  6.440891234439516 
+
+
+Decision Tree Regressor with min_samples_leaf = 7
+
+The RVE is:  0.8811132783425116
+The rmse is:  11.785375373457049
+The Correlation Score is is: 0.9393 (p-value=0.000000e+00)
+
+The Maximum Error is:  171.27525
+The Mean Absolute Error is:  6.630999373025378 
+
+
+Decision Tree Regressor with min_samples_leaf = 13
+
+The RVE is:  0.8734132123050791
+The rmse is:  12.161036246356895
+The Correlation Score is is: 0.9350 (p-value=0.000000e+00)
+
+The Maximum Error is:  158.57692307692307
+The Mean Absolute Error is:  6.962829619176944 
+
+
+Decision Tree Regressor with min_samples_leaf = 19
+
+The RVE is:  0.8697542290936975
+The rmse is:  12.33591397308907
+The Correlation Score is is: 0.9329 (p-value=0.000000e+00)
+
+The Maximum Error is:  180.82895454545454
+The Mean Absolute Error is:  7.246447852915878 
+
+
+Decision Tree Regressor with min_samples_leaf = 25
+
+The RVE is:  0.8687552795120574
+The rmse is:  12.382801736855669
+The Correlation Score is is: 0.9322 (p-value=0.000000e+00)
+
+The Maximum Error is:  160.96906896551724
+The Mean Absolute Error is:  7.387283460453335 
+
+
+Decision Tree Regressor with min_samples_leaf = 31
+
+The RVE is:  0.8636012702730496
+The rmse is:  12.623578135524298
+The Correlation Score is is: 0.9294 (p-value=0.000000e+00)
+
+The Maximum Error is:  175.6144918032787
+The Mean Absolute Error is:  7.623170359012776 
+
+
+Decision Tree Regressor with min_samples_leaf = 37
+
+The RVE is:  0.8578723278455505
+The rmse is:  12.885937654057242
+The Correlation Score is is: 0.9263 (p-value=0.000000e+00)
+
+The Maximum Error is:  177.7301914893617
+The Mean Absolute Error is:  7.8266135251433955 
+
+
+Decision Tree Regressor with min_samples_leaf = 43
+
+The RVE is:  0.8528380440183329
+The rmse is:  13.112154239942026
+The Correlation Score is is: 0.9236 (p-value=0.000000e+00)
+
+The Maximum Error is:  166.09553571428572
+The Mean Absolute Error is:  8.025154920505623 
+
+
+Decision Tree Regressor with min_samples_leaf = 49
+
+The RVE is:  0.8509167921581767
+The rmse is:  13.197828200234383
+The Correlation Score is is: 0.9226 (p-value=0.000000e+00)
+
+The Maximum Error is:  177.25091836734694
+The Mean Absolute Error is:  8.15323587429897 
+
+
+Decision Tree Regressor with min_samples_leaf = 55
+
+The RVE is:  0.8454944075591238
+The rmse is:  13.435326629390163
+The Correlation Score is is: 0.9196 (p-value=0.000000e+00)
+
+The Maximum Error is:  173.51667441860465
+The Mean Absolute Error is:  8.357401171737783 

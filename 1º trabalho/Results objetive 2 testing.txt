@@ -1,0 +1,249 @@
+Decision Tree Classifier with max_depth = 1
+
+The accuracy score is:  0.8339
+The Precision is:  0.0000
+The Recall is:  0.0000
+The F1 score is:  0.0000
+The Matthews correlation coefficient is:  0.0000
+
+Decision Tree Classifier with max_depth = 4
+
+The accuracy score is:  0.8790
+The Precision is:  0.6715
+The Recall is:  0.5315
+The F1 score is:  0.5933
+The Matthews correlation coefficient is:  0.5283
+
+Decision Tree Classifier with max_depth = 7
+
+The accuracy score is:  0.9115
+The Precision is:  0.7359
+The Recall is:  0.7290
+The F1 score is:  0.7324
+The Matthews correlation coefficient is:  0.6794
+
+Decision Tree Classifier with max_depth = 10
+
+The accuracy score is:  0.9265
+The Precision is:  0.7766
+The Recall is:  0.7828
+The F1 score is:  0.7797
+The Matthews correlation coefficient is:  0.7356
+
+Decision Tree Classifier with max_depth = 13
+
+The accuracy score is:  0.9293
+The Precision is:  0.7807
+The Recall is:  0.7991
+The F1 score is:  0.7898
+The Matthews correlation coefficient is:  0.7474
+
+Decision Tree Classifier with max_depth = 16
+
+The accuracy score is:  0.9299
+The Precision is:  0.7853
+The Recall is:  0.7957
+The F1 score is:  0.7904
+The Matthews correlation coefficient is:  0.7484
+
+Decision Tree Classifier with max_depth = 19
+
+The accuracy score is:  0.9292
+The Precision is:  0.7894
+The Recall is:  0.7828
+The F1 score is:  0.7861
+The Matthews correlation coefficient is:  0.7437
+
+Decision Tree Classifier with max_depth = 22
+
+The accuracy score is:  0.9296
+The Precision is:  0.7892
+The Recall is:  0.7862
+The F1 score is:  0.7877
+The Matthews correlation coefficient is:  0.7455
+
+Decision Tree Classifier with max_depth = 25
+
+The accuracy score is:  0.9289
+The Precision is:  0.7908
+The Recall is:  0.7779
+The F1 score is:  0.7843
+The Matthews correlation coefficient is:  0.7417
+
+Decision Tree Classifier with max_depth = 28
+
+The accuracy score is:  0.9300
+The Precision is:  0.7886
+The Recall is:  0.7904
+The F1 score is:  0.7895
+The Matthews correlation coefficient is:  0.7475
+
+
+---------------------------------------------------------
+
+min samples leaf
+
+Decision Tree Classifier with min_samples_leaf = 1
+
+The accuracy score is:  0.9266
+The Precision is:  0.7789
+The Recall is:  0.7798
+The F1 score is:  0.7793
+The Matthews correlation coefficient is:  0.7353
+
+Decision Tree Classifier with min_samples_leaf = 7
+
+The accuracy score is:  0.9278
+The Precision is:  0.7800
+The Recall is:  0.7877
+The F1 score is:  0.7839
+The Matthews correlation coefficient is:  0.7406
+
+Decision Tree Classifier with min_samples_leaf = 13
+
+The accuracy score is:  0.9244
+The Precision is:  0.7811
+The Recall is:  0.7574
+The F1 score is:  0.7691
+The Matthews correlation coefficient is:  0.7240
+
+Decision Tree Classifier with min_samples_leaf = 19
+
+The accuracy score is:  0.9201
+The Precision is:  0.7690
+The Recall is:  0.7418
+The F1 score is:  0.7552
+The Matthews correlation coefficient is:  0.7076
+
+Decision Tree Classifier with min_samples_leaf = 25
+
+The accuracy score is:  0.9180
+The Precision is:  0.7722
+The Recall is:  0.7183
+The F1 score is:  0.7443
+The Matthews correlation coefficient is:  0.6962
+
+Decision Tree Classifier with min_samples_leaf = 31
+
+The accuracy score is:  0.9166
+The Precision is:  0.7681
+The Recall is:  0.7130
+The F1 score is:  0.7395
+The Matthews correlation coefficient is:  0.6906
+
+Decision Tree Classifier with min_samples_leaf = 37
+
+The accuracy score is:  0.9167
+The Precision is:  0.7743
+The Recall is:  0.7036
+The F1 score is:  0.7372
+The Matthews correlation coefficient is:  0.6890
+
+Decision Tree Classifier with min_samples_leaf = 43
+
+The accuracy score is:  0.9135
+The Precision is:  0.7581
+The Recall is:  0.7043
+The F1 score is:  0.7302
+The Matthews correlation coefficient is:  0.6795
+
+Decision Tree Classifier with min_samples_leaf = 49
+
+The accuracy score is:  0.9125
+The Precision is:  0.7579
+The Recall is:  0.6952
+The F1 score is:  0.7252
+The Matthews correlation coefficient is:  0.6741
+
+Decision Tree Classifier with min_samples_leaf = 55
+
+The accuracy score is:  0.9141
+The Precision is:  0.7630
+The Recall is:  0.7005
+The F1 score is:  0.7304
+The Matthews correlation coefficient is:  0.6803
+
+
+---------------------------------------------------------
+Logistic Regression with C hyperparameter
+
+Logistic Regression with C = 0.001
+
+The accuracy score is:  0.8618
+The Precision is:  0.7367
+The Recall is:  0.2619
+The F1 score is:  0.3865
+The Matthews correlation coefficient is:  0.3841
+
+Logistic Regression with C = 0.002
+
+The accuracy score is:  0.8642
+The Precision is:  0.7319
+The Recall is:  0.2877
+The F1 score is:  0.4131
+The Matthews correlation coefficient is:  0.4018
+
+Logistic Regression with C = 0.005
+
+The accuracy score is:  0.8705
+The Precision is:  0.7299
+The Recall is:  0.3503
+The F1 score is:  0.4734
+The Matthews correlation coefficient is:  0.4458
+
+Logistic Regression with C = 0.01
+
+The accuracy score is:  0.8731
+The Precision is:  0.7051
+The Recall is:  0.4060
+The F1 score is:  0.5153
+The Matthews correlation coefficient is:  0.4709
+
+Logistic Regression with C = 0.02
+
+The accuracy score is:  0.8751
+The Precision is:  0.6953
+The Recall is:  0.4420
+The F1 score is:  0.5404
+The Matthews correlation coefficient is:  0.4885
+
+
+Logistic Regression with C = 0.05
+
+The accuracy score is:  0.8751
+The Precision is:  0.6655
+The Recall is:  0.4985
+The F1 score is:  0.5700
+The Matthews correlation coefficient is:  0.5058
+
+Logistic Regression with C = 0.1
+
+The accuracy score is:  0.8857
+The Precision is:  0.6796
+The Recall is:  0.5902
+The F1 score is:  0.6318
+The Matthews correlation coefficient is:  0.5665
+
+Logistic Regression with C = 1
+
+The accuracy score is:  0.8908
+The Precision is:  0.6899
+The Recall is:  0.6224
+The F1 score is:  0.6544
+The Matthews correlation coefficient is:  0.5909
+
+Logistic Regression with C = 10
+
+The accuracy score is:  0.8927
+The Precision is:  0.6914
+The Recall is:  0.6395
+The F1 score is:  0.6644
+The Matthews correlation coefficient is:  0.6013
+
+Logistic Regression with C = 100
+
+The accuracy score is:  0.8911
+The Precision is:  0.6854
+The Recall is:  0.6368
+The F1 score is:  0.6602
+The Matthews correlation coefficient is:  0.5961
