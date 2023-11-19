@@ -1,0 +1,2389 @@
+
+Model 1
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8365
+The Recall is:  0.8373
+The F1 score is:  0.8366
+The Matthews correlation coefficient is:  0.7967
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3653    10   242    65   125
+1    25  3388    36    15   276
+2   203    32  3496   278    81
+3   254    61   429  2675   257
+4    55   281    93   358  3136
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 2
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8500
+The Recall is:  0.8510
+The F1 score is:  0.8503
+The Matthews correlation coefficient is:  0.8137
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3705    10   198    90    92
+1    26  3428    34    13   239
+2   203    25  3540   270    52
+3   247    43   341  2774   271
+4    46   281    86   343  3167
+
+Model 3
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.9053
+The Recall is:  0.9027
+The F1 score is:  0.9030
+The Matthews correlation coefficient is:  0.8788
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3963    12    85    33     2
+1    27  3319    56   160   178
+2    58     3  3770   236    23
+3    32    15   307  3264    58
+4    67   138   181   228  3309
+
+Model 4
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9639
+The Recall is:  0.9639
+The F1 score is:  0.9639
+The Matthews correlation coefficient is:  0.9549
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4062    15    13     4     1
+1    13  3542    14    46   125
+2    18    13  3971    66    22
+3     6    41    72  3510    47
+4     2   108    22    56  3735
+
+Model 5
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9573
+The Recall is:  0.9573
+The F1 score is:  0.9573
+The Matthews correlation coefficient is:  0.9466
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4059    11    15     6     4
+1    12  3531    16    52   129
+2    22     5  3955    80    28
+3    10    43    85  3488    50
+4     1   142    43    79  3658
+
+Model 6
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9486
+The Recall is:  0.9486
+The F1 score is:  0.9485
+The Matthews correlation coefficient is:  0.9357
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4059    10    18     3     5
+1     5  3479    28    55   173
+2    28    10  3912   108    32
+3    14    32    99  3461    70
+4     5   161    39   109  3609
+
+Model 7
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9658
+The Recall is:  0.9658
+The F1 score is:  0.9658
+The Matthews correlation coefficient is:  0.9573
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4066    12    10     4     3
+1    12  3568    15    43   102
+2    11     9  3973    76    21
+3     5    41    66  3520    44
+4     3   105    24    61  3730
+
+Model 8
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9638
+The Recall is:  0.9638
+The F1 score is:  0.9638
+The Matthews correlation coefficient is:  0.9547
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4066    10    10     3     6
+1    12  3566    18    24   120
+2    14    13  3947    94    22
+3     6    26    87  3515    42
+4     4    99    38    59  3723
+
+Model 9
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: GaussianNB GaussianNB()
+The Precision is:  0.4142
+The Recall is:  0.3712
+The F1 score is:  0.2560
+The Matthews correlation coefficient is:  0.2555
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  50   104  267  3319
+2  0   0  4072   18     0
+3  0   0  3106  557    13
+4  0   0   554  801  2568
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Model 10
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9517
+The Recall is:  0.9511
+The F1 score is:  0.9510
+The Matthews correlation coefficient is:  0.9390
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    30  3527    35    97    51
+2    65     2  3955    67     1
+3    30    12   200  3433     1
+4    47   177    74    48  3577
+
+Model 11
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9517
+The Recall is:  0.9511
+The F1 score is:  0.9510
+The Matthews correlation coefficient is:  0.9390
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    30  3527    35    97    51
+2    65     2  3955    67     1
+3    30    12   200  3433     1
+4    47   177    74    48  3577
+
+Model 12
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9424
+The Recall is:  0.9413
+The F1 score is:  0.9410
+The Matthews correlation coefficient is:  0.9269
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    34  3509    45    92    60
+2    91     1  3927    70     1
+3    39     9   247  3380     1
+4    78   193    99    69  3484
+
+Model 13
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9424
+The Recall is:  0.9413
+The F1 score is:  0.9410
+The Matthews correlation coefficient is:  0.9269
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    34  3509    45    92    60
+2    91     1  3927    70     1
+3    39     9   247  3380     1
+4    78   193    99    69  3484
+
+Model 14
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9463
+The Recall is:  0.9455
+The F1 score is:  0.9453
+The Matthews correlation coefficient is:  0.9321
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    30  3495    43   110    62
+2    73     1  3944    71     1
+3    27     6   223  3419     1
+4    61   186    90    62  3524
+
+Model 15
+Scaler: PowerTransformer() imputer: SimpleImputer() classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9463
+The Recall is:  0.9455
+The F1 score is:  0.9453
+The Matthews correlation coefficient is:  0.9321
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    30  3495    43   110    62
+2    73     1  3944    71     1
+3    27     6   223  3419     1
+4    61   186    90    62  3524
+
+Model 16
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8131
+The Recall is:  0.8136
+The F1 score is:  0.8127
+The Matthews correlation coefficient is:  0.7670
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3540    10   288    81   176
+1    25  3389    37    21   268
+2   230    44  3332   321   163
+3   275    64   536  2545   256
+4   107   270   145   323  3078
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 17
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8211
+The Recall is:  0.8219
+The F1 score is:  0.8212
+The Matthews correlation coefficient is:  0.7774
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3574    10   250   112   149
+1    25  3409    39    20   247
+2   245    33  3347   306   159
+3   268    55   474  2609   270
+4    87   271   125   332  3108
+
+Model 18
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.8952
+The Recall is:  0.8948
+The F1 score is:  0.8948
+The Matthews correlation coefficient is:  0.8685
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3945    11   109    20    10
+1    36  3364    39    96   205
+2    97     6  3614   266   107
+3    73    17   283  3198   105
+4    74   182   134   184  3349
+
+Model 19
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9597
+The Recall is:  0.9596
+The F1 score is:  0.9596
+The Matthews correlation coefficient is:  0.9495
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4047    11    31     5     1
+1    13  3533    16    57   121
+2    11    15  3963    79    22
+3    15    21    88  3502    50
+4     5   120    35    72  3691
+
+Model 20
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9553
+The Recall is:  0.9553
+The F1 score is:  0.9553
+The Matthews correlation coefficient is:  0.9442
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4058    12    21     1     3
+1     7  3531    19    50   133
+2    12    13  3949    85    31
+3    16    15   113  3478    54
+4     4   157    39    87  3636
+
+Model 21
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9459
+The Recall is:  0.9460
+The F1 score is:  0.9459
+The Matthews correlation coefficient is:  0.9324
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4056    10    23     3     3
+1     5  3499    22    62   152
+2    29    16  3901   106    38
+3    17    22   129  3440    68
+4     3   193    41   113  3573
+
+Model 22
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9646
+The Recall is:  0.9647
+The F1 score is:  0.9646
+The Matthews correlation coefficient is:  0.9558
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4071    10    11     3     0
+1    10  3556    22    45   107
+2     8    22  3967    71    22
+3    13    19    75  3525    44
+4     4   116    33    55  3715
+
+Model 23
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9675
+The Recall is:  0.9675
+The F1 score is:  0.9675
+The Matthews correlation coefficient is:  0.9594
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4067     9    16     2     1
+1    11  3577    17    17   118
+2     8     7  3980    82    13
+3     3    17    72  3535    49
+4     6   100    24    62  3731
+
+Model 24
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: GaussianNB GaussianNB()
+The Precision is:  0.4146
+The Recall is:  0.3721
+The F1 score is:  0.2583
+The Matthews correlation coefficient is:  0.2569
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  74   109  262  3295
+2  0   0  4071   18     1
+3  0   0  3110  555    11
+4  0   0   559  799  2565
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Model 25
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9513
+The Recall is:  0.9507
+The F1 score is:  0.9505
+The Matthews correlation coefficient is:  0.9385
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     4     0     1
+1    34  3534    32    89    51
+2    66     2  3950    71     1
+3    32    11   203  3429     1
+4    55   176    72    50  3570
+
+Model 26
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9513
+The Recall is:  0.9507
+The F1 score is:  0.9505
+The Matthews correlation coefficient is:  0.9385
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     4     0     1
+1    34  3534    32    89    51
+2    66     2  3950    71     1
+3    32    11   203  3429     1
+4    55   176    72    50  3570
+
+Model 27
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9418
+The Recall is:  0.9406
+The F1 score is:  0.9404
+The Matthews correlation coefficient is:  0.9261
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4074    13     7     0     1
+1    36  3500    48    94    62
+2    88     2  3929    70     1
+3    43     9   244  3379     1
+4    80   196    93    71  3483
+
+Model 28
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9418
+The Recall is:  0.9406
+The F1 score is:  0.9404
+The Matthews correlation coefficient is:  0.9261
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4074    13     7     0     1
+1    36  3500    48    94    62
+2    88     2  3929    70     1
+3    43     9   244  3379     1
+4    80   196    93    71  3483
+
+Model 29
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9458
+The Recall is:  0.9449
+The F1 score is:  0.9448
+The Matthews correlation coefficient is:  0.9314
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4075    13     6     0     1
+1    32  3493    43   108    64
+2    71     1  3940    77     1
+3    29     6   224  3416     1
+4    63   190    84    61  3525
+
+Model 30
+Scaler: PowerTransformer() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9458
+The Recall is:  0.9449
+The F1 score is:  0.9448
+The Matthews correlation coefficient is:  0.9314
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4075    13     6     0     1
+1    32  3493    43   108    64
+2    71     1  3940    77     1
+3    29     6   224  3416     1
+4    63   190    84    61  3525
+
+Model 31
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8172
+The Recall is:  0.8190
+The F1 score is:  0.8176
+The Matthews correlation coefficient is:  0.7739
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3733    12   188    48   114
+1    21  3361    87    62   209
+2   201    52  3290   453    94
+3   241   138   503  2507   287
+4   107   302   132   282  3100
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 32
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8267
+The Recall is:  0.8283
+The F1 score is:  0.8271
+The Matthews correlation coefficient is:  0.7854
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3739    12   182    55   107
+1    22  3379    74    49   216
+2   194    42  3332   426    96
+3   237   113   470  2561   295
+4   104   271   124   263  3161
+
+Model 33
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.7943
+The Recall is:  0.7948
+The F1 score is:  0.7937
+The Matthews correlation coefficient is:  0.7436
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3800    44   184    36    31
+1   100  2877   170   239   354
+2   200   120  3229   256   285
+3   156   220   436  2583   281
+4   129   258   289   218  3029
+
+Model 34
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.8989
+The Recall is:  0.8989
+The F1 score is:  0.8988
+The Matthews correlation coefficient is:  0.8736
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3994    18    47    18    18
+1    28  3255    98   157   202
+2    42    72  3720   169    87
+3    33   164   192  3192    95
+4    21   198   157   158  3389
+
+Model 35
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.8854
+The Recall is:  0.8855
+The F1 score is:  0.8854
+The Matthews correlation coefficient is:  0.8569
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3991    31    30    24    19
+1    30  3246    71   152   241
+2    47   110  3637   180   116
+3    37   208   200  3113   118
+4    39   267   159   156  3302
+
+Model 36
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.8696
+The Recall is:  0.8695
+The F1 score is:  0.8695
+The Matthews correlation coefficient is:  0.8369
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3951    33    46    29    36
+1    22  3178    84   175   281
+2    41   115  3598   216   120
+3    36   233   239  3020   148
+4    42   274   155   222  3230
+
+Model 37
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9015
+The Recall is:  0.9017
+The F1 score is:  0.9016
+The Matthews correlation coefficient is:  0.8771
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4016    21    23    16    19
+1    28  3268    77   159   208
+2    34    77  3712   177    90
+3    31   175   160  3194   116
+4    27   194   145   142  3415
+
+Model 38
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9080
+The Recall is:  0.9081
+The F1 score is:  0.9080
+The Matthews correlation coefficient is:  0.8850
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4002    20    35    18    20
+1    25  3303    88   135   189
+2    33    74  3738   163    82
+3    25   111   188  3243   109
+4    33   183   122   142  3443
+
+Model 39
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: GaussianNB GaussianNB()
+The Precision is:  0.6144
+The Recall is:  0.2064
+The F1 score is:  0.0783
+The Matthews correlation coefficient is:  0.0387
+
+This is the Confusion Matrix
+   0  1  2   3     4
+0  8  3  0  23  4061
+1  0  7  0  44  3689
+2  0  3  6  75  4006
+3  0  3  0  85  3588
+4  0  0  0   0  3923
+
+Model 40
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9350
+The Recall is:  0.9340
+The F1 score is:  0.9339
+The Matthews correlation coefficient is:  0.9178
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4054    13    24     1     3
+1    49  3442    69   113    67
+2    75    14  3874   122     5
+3    30    58   218  3367     3
+4   114   180    79    51  3499
+
+Model 41
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9350
+The Recall is:  0.9340
+The F1 score is:  0.9339
+The Matthews correlation coefficient is:  0.9178
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4054    13    24     1     3
+1    49  3442    69   113    67
+2    75    14  3874   122     5
+3    30    58   218  3367     3
+4   114   180    79    51  3499
+
+Model 42
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9250
+The Recall is:  0.9234
+The F1 score is:  0.9231
+The Matthews correlation coefficient is:  0.9047
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4061    14    19     0     1
+1    48  3401    85   130    76
+2    97     9  3860   122     2
+3    31    63   263  3314     5
+4   157   193   108    73  3392
+
+Model 43
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9250
+The Recall is:  0.9234
+The F1 score is:  0.9231
+The Matthews correlation coefficient is:  0.9047
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4061    14    19     0     1
+1    48  3401    85   130    76
+2    97     9  3860   122     2
+3    31    63   263  3314     5
+4   157   193   108    73  3392
+
+Model 44
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9315
+The Recall is:  0.9303
+The F1 score is:  0.9301
+The Matthews correlation coefficient is:  0.9133
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4063    13    18     0     1
+1    43  3395    84   139    79
+2    71     8  3895   115     1
+3    27    43   235  3363     8
+4   130   180    98    67  3448
+
+Model 45
+Scaler: PowerTransformer() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9315
+The Recall is:  0.9303
+The F1 score is:  0.9301
+The Matthews correlation coefficient is:  0.9133
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4063    13    18     0     1
+1    43  3395    84   139    79
+2    71     8  3895   115     1
+3    27    43   235  3363     8
+4   130   180    98    67  3448
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 46
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.7759
+The Recall is:  0.7765
+The F1 score is:  0.7738
+The Matthews correlation coefficient is:  0.7212
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3517    27   283    56   212
+1    23  3271    62    40   344
+2   424    72  3150   361    83
+3   321   122   750  2181   302
+4   128   361   149   244  3041
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 47
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8069
+The Recall is:  0.8075
+The F1 score is:  0.8070
+The Matthews correlation coefficient is:  0.7593
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3491    15   293   187   109
+1    78  3260    55    23   324
+2   213    57  3400   285   135
+3   171   104   416  2677   308
+4   152   349   130   355  2937
+
+Model 48
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.9073
+The Recall is:  0.9052
+The F1 score is:  0.9054
+The Matthews correlation coefficient is:  0.8819
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3963    11    89    30     2
+1    27  3344    55   136   178
+2    58     0  3781   223    28
+3    37    11   293  3268    67
+4    69   144   170   222  3318
+
+Model 49
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9654
+The Recall is:  0.9654
+The F1 score is:  0.9654
+The Matthews correlation coefficient is:  0.9568
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4068    12    10     3     2
+1    12  3547    11    53   117
+2    17    11  3971    63    28
+3    10    44    55  3529    38
+4     3    97    21    68  3734
+
+Model 50
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9591
+The Recall is:  0.9591
+The F1 score is:  0.9591
+The Matthews correlation coefficient is:  0.9489
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4059    11    17     4     4
+1     8  3526    16    51   139
+2    24     8  3974    54    30
+3     8    46    72  3512    38
+4     2   163    31    72  3655
+
+Model 51
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9505
+The Recall is:  0.9506
+The F1 score is:  0.9505
+The Matthews correlation coefficient is:  0.9382
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4060    10    23     1     1
+1     5  3484    21    62   168
+2    27    12  3934    89    28
+3    15    25   100  3466    70
+4     2   179    29    98  3615
+
+Model 52
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9668
+The Recall is:  0.9668
+The F1 score is:  0.9668
+The Matthews correlation coefficient is:  0.9585
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069     8    12     4     2
+1    14  3554     8    44   120
+2    17     9  3977    59    28
+3    11    35    57  3533    40
+4     2   104    24    50  3743
+
+Model 53
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9647
+The Recall is:  0.9647
+The F1 score is:  0.9647
+The Matthews correlation coefficient is:  0.9559
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4065    10     8     6     6
+1    13  3582    15    30   100
+2    13     3  3953    96    25
+3     5    30    87  3515    39
+4     1   107    28    67  3720
+
+Model 54
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: GaussianNB GaussianNB()
+The Precision is:  0.4143
+The Recall is:  0.3711
+The F1 score is:  0.2559
+The Matthews correlation coefficient is:  0.2554
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  48   103  268  3321
+2  0   0  4072   18     0
+3  0   0  3105  561    10
+4  0   0   553  805  2565
+
+Model 55
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9571
+The Recall is:  0.9566
+The F1 score is:  0.9565
+The Matthews correlation coefficient is:  0.9459
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4080    12     3     0     0
+1    18  3565    25    81    51
+2    62     1  3964    62     1
+3    25    12   185  3454     0
+4    21   166    72    50  3614
+
+Model 56
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9571
+The Recall is:  0.9566
+The F1 score is:  0.9565
+The Matthews correlation coefficient is:  0.9459
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4080    12     3     0     0
+1    18  3565    25    81    51
+2    62     1  3964    62     1
+3    25    12   185  3454     0
+4    21   166    72    50  3614
+
+Model 57
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9468
+The Recall is:  0.9459
+The F1 score is:  0.9458
+The Matthews correlation coefficient is:  0.9326
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    19  3537    43    85    56
+2    83     1  3939    66     1
+3    41    11   240  3382     2
+4    50   184    92    65  3532
+
+Model 58
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9468
+The Recall is:  0.9459
+The F1 score is:  0.9458
+The Matthews correlation coefficient is:  0.9326
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    19  3537    43    85    56
+2    83     1  3939    66     1
+3    41    11   240  3382     2
+4    50   184    92    65  3532
+
+Model 59
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9514
+The Recall is:  0.9508
+The F1 score is:  0.9507
+The Matthews correlation coefficient is:  0.9387
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    15  3536    35    93    61
+2    66     1  3956    66     1
+3    23     8   217  3426     2
+4    42   179    82    53  3567
+
+Model 60
+Scaler: MinMaxScaler() imputer: SimpleImputer() classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9514
+The Recall is:  0.9508
+The F1 score is:  0.9507
+The Matthews correlation coefficient is:  0.9387
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    15  3536    35    93    61
+2    66     1  3956    66     1
+3    23     8   217  3426     2
+4    42   179    82    53  3567
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 61
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.7661
+The Recall is:  0.7671
+The F1 score is:  0.7640
+The Matthews correlation coefficient is:  0.7096
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3508    28   282    60   217
+1    25  3294    62    48   311
+2   415    84  3098   398    95
+3   353   117   790  2102   314
+4   172   355   186   235  2975
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 62
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.7919
+The Recall is:  0.7924
+The F1 score is:  0.7916
+The Matthews correlation coefficient is:  0.7404
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3498    24   282    91   200
+1    50  3277    51    23   339
+2   221    49  3254   392   174
+3   265    81   561  2492   277
+4   168   318   183   305  2949
+
+Model 63
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.8949
+The Recall is:  0.8945
+The F1 score is:  0.8945
+The Matthews correlation coefficient is:  0.8682
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3945    11   109    20    10
+1    37  3359    40    97   207
+2    97     7  3613   267   106
+3    74    18   281  3197   106
+4    74   180   134   184  3351
+
+Model 64
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9596
+The Recall is:  0.9596
+The F1 score is:  0.9596
+The Matthews correlation coefficient is:  0.9495
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4048    11    32     4     0
+1    15  3536    16    57   116
+2     9    16  3957    74    34
+3    13    26    82  3506    49
+4     4   120    36    75  3688
+
+Model 65
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9567
+The Recall is:  0.9567
+The F1 score is:  0.9567
+The Matthews correlation coefficient is:  0.9459
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4059    12    18     3     3
+1     7  3537    19    49   128
+2    11    11  3954    82    32
+3    15    19   106  3481    55
+4     5   152    34    84  3648
+
+Model 66
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9455
+The Recall is:  0.9455
+The F1 score is:  0.9454
+The Matthews correlation coefficient is:  0.9319
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4056    10    23     3     3
+1     5  3495    22    61   157
+2    28    17  3901   104    40
+3    17    21   129  3444    65
+4     3   195    47   114  3564
+
+Model 67
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9633
+The Recall is:  0.9633
+The F1 score is:  0.9633
+The Matthews correlation coefficient is:  0.9541
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069    10    10     5     1
+1    13  3548    16    50   113
+2     9    13  3958    79    31
+3    13    30    75  3520    38
+4     1   111    35    64  3712
+
+Model 68
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9671
+The Recall is:  0.9671
+The F1 score is:  0.9671
+The Matthews correlation coefficient is:  0.9589
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4066     8    17     2     2
+1    11  3585    14    20   110
+2     9     7  3970    88    16
+3     6    26    67  3530    47
+4     5    99    23    65  3731
+
+Model 69
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: GaussianNB GaussianNB()
+The Precision is:  0.4148
+The Recall is:  0.3724
+The F1 score is:  0.2587
+The Matthews correlation coefficient is:  0.2572
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  75   107  264  3294
+2  0   0  4072   18     0
+3  0   0  3108  558    10
+4  0   0   558  800  2565
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Model 70
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9553
+The Recall is:  0.9547
+The F1 score is:  0.9546
+The Matthews correlation coefficient is:  0.9435
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4080    13     2     0     0
+1    20  3555    29    82    54
+2    60     2  3965    62     1
+3    30    12   198  3435     1
+4    28   168    75    47  3605
+
+Model 71
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9553
+The Recall is:  0.9547
+The F1 score is:  0.9546
+The Matthews correlation coefficient is:  0.9435
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4080    13     2     0     0
+1    20  3555    29    82    54
+2    60     2  3965    62     1
+3    30    12   198  3435     1
+4    28   168    75    47  3605
+
+Model 72
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9452
+The Recall is:  0.9441
+The F1 score is:  0.9439
+The Matthews correlation coefficient is:  0.9304
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    21  3536    44    82    57
+2    83     2  3939    65     1
+3    43    10   261  3360     2
+4    60   180   101    63  3519
+
+Model 73
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9452
+The Recall is:  0.9441
+The F1 score is:  0.9439
+The Matthews correlation coefficient is:  0.9304
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    21  3536    44    82    57
+2    83     2  3939    65     1
+3    43    10   261  3360     2
+4    60   180   101    63  3519
+
+Model 74
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9494
+The Recall is:  0.9486
+The F1 score is:  0.9484
+The Matthews correlation coefficient is:  0.9359
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    19  3528    38    92    63
+2    63     1  3957    68     1
+3    28     6   234  3406     2
+4    50   177    90    55  3551
+
+Model 75
+Scaler: MinMaxScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9494
+The Recall is:  0.9486
+The F1 score is:  0.9484
+The Matthews correlation coefficient is:  0.9359
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    19  3528    38    92    63
+2    63     1  3957    68     1
+3    28     6   234  3406     2
+4    50   177    90    55  3551
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 76
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.7557
+The Recall is:  0.7578
+The F1 score is:  0.7557
+The Matthews correlation coefficient is:  0.6975
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3562    45   203    80   205
+1    27  3143   163   184   223
+2   355   128  2996   481   130
+3   257   154   760  2198   307
+4   207   420   176   223  2897
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 77
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.7687
+The Recall is:  0.7704
+The F1 score is:  0.7691
+The Matthews correlation coefficient is:  0.7130
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3533    10   285    92   175
+1    32  3214   126   122   246
+2   358    84  3037   467   144
+3   184   181   592  2361   358
+4   181   358   174   313  2897
+
+Model 78
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.8114
+The Recall is:  0.8073
+The F1 score is:  0.8080
+The Matthews correlation coefficient is:  0.7597
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3750    67   151    88    39
+1    28  2965   251   233   263
+2    77   111  3402   322   178
+3    51   211   531  2722   161
+4    69   299   429   203  2923
+
+Model 79
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9035
+The Recall is:  0.9035
+The F1 score is:  0.9034
+The Matthews correlation coefficient is:  0.8793
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3995    21    36    22    21
+1    20  3280   107   155   178
+2    36    73  3715   163   103
+3    31   138   179  3227   101
+4    25   188   151   136  3423
+
+Model 80
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.8899
+The Recall is:  0.8900
+The F1 score is:  0.8899
+The Matthews correlation coefficient is:  0.8625
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3986    25    32    30    22
+1    19  3266   104   146   205
+2    47   105  3650   181   107
+3    39   156   195  3168   118
+4    48   232   149   187  3307
+
+Model 81
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.8700
+The Recall is:  0.8699
+The F1 score is:  0.8697
+The Matthews correlation coefficient is:  0.8374
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3940    28    59    32    36
+1    25  3220   123   144   228
+2    60   134  3567   219   110
+3    57   220   230  3036   133
+4    52   289   190   171  3221
+
+Model 82
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9042
+The Recall is:  0.9044
+The F1 score is:  0.9043
+The Matthews correlation coefficient is:  0.8805
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4019    19    21    23    13
+1    22  3278    98   143   199
+2    24    77  3730   162    97
+3    31   137   188  3206   114
+4    41   169   151   137  3425
+
+Model 83
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9128
+The Recall is:  0.9128
+The F1 score is:  0.9128
+The Matthews correlation coefficient is:  0.8910
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4014    18    26    18    19
+1    15  3338    82   124   181
+2    23    68  3737   160   102
+3    23    96   197  3241   119
+4    30   160   128   113  3492
+
+Model 84
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: GaussianNB GaussianNB()
+The Precision is:  0.6334
+The Recall is:  0.2168
+The F1 score is:  0.0990
+The Matthews correlation coefficient is:  0.0823
+
+This is the Confusion Matrix
+     0  1   2   3     4
+0  164  0   1  24  3906
+1    0  6   0  44  3690
+2    0  1  55  78  3956
+3    0  3   2  84  3587
+4    0  0   0   0  3923
+
+Model 85
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9353
+The Recall is:  0.9344
+The F1 score is:  0.9342
+The Matthews correlation coefficient is:  0.9182
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069    12    14     0     0
+1    40  3441    70   122    67
+2    79    13  3872   124     2
+3    29    58   218  3363     8
+4   112   165    91    57  3498
+
+Model 86
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9353
+The Recall is:  0.9344
+The F1 score is:  0.9342
+The Matthews correlation coefficient is:  0.9182
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069    12    14     0     0
+1    40  3441    70   122    67
+2    79    13  3872   124     2
+3    29    58   218  3363     8
+4   112   165    91    57  3498
+
+Model 87
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9258
+The Recall is:  0.9241
+The F1 score is:  0.9239
+The Matthews correlation coefficient is:  0.9056
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4068    13    13     1     0
+1    41  3402    91   131    75
+2    85     9  3874   122     0
+3    37    49   285  3296     9
+4   137   175   127    81  3403
+
+Model 88
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9258
+The Recall is:  0.9241
+The F1 score is:  0.9239
+The Matthews correlation coefficient is:  0.9056
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4068    13    13     1     0
+1    41  3402    91   131    75
+2    85     9  3874   122     0
+3    37    49   285  3296     9
+4   137   175   127    81  3403
+
+Model 89
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9327
+The Recall is:  0.9314
+The F1 score is:  0.9312
+The Matthews correlation coefficient is:  0.9146
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069    12    13     1     0
+1    34  3393    88   143    82
+2    67     6  3901   116     0
+3    26    28   252  3359    11
+4   110   165   114    72  3462
+
+Model 90
+Scaler: MinMaxScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9327
+The Recall is:  0.9314
+The F1 score is:  0.9312
+The Matthews correlation coefficient is:  0.9146
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4069    12    13     1     0
+1    34  3393    88   143    82
+2    67     6  3901   116     0
+3    26    28   252  3359    11
+4   110   165   114    72  3462
+
+Model 91
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8365
+The Recall is:  0.8372
+The F1 score is:  0.8365
+The Matthews correlation coefficient is:  0.7965
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3644    10   249    67   125
+1    24  3394    36    15   271
+2   202    33  3496   275    84
+3   255    62   422  2678   259
+4    57   274    97   361  3134
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+Model 92
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8510
+The Recall is:  0.8518
+The F1 score is:  0.8512
+The Matthews correlation coefficient is:  0.8147
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3702    10   203    88    92
+1    25  3427    33    14   241
+2   201    22  3536   279    52
+3   237    41   330  2791   277
+4    47   276    82   344  3174
+
+Model 93
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.9071
+The Recall is:  0.9051
+The F1 score is:  0.9052
+The Matthews correlation coefficient is:  0.8817
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3963    11    89    30     2
+1    27  3340    55   137   181
+2    58     0  3785   219    28
+3    34    15   295  3266    66
+4    69   147   169   221  3317
+
+Model 94
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9655
+The Recall is:  0.9655
+The F1 score is:  0.9655
+The Matthews correlation coefficient is:  0.9569
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4067    12    10     4     2
+1    13  3547    12    47   121
+2    17    12  3974    55    32
+3     7    43    58  3528    40
+4     3   101    22    62  3735
+
+Model 95
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9595
+The Recall is:  0.9595
+The F1 score is:  0.9595
+The Matthews correlation coefficient is:  0.9493
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4059    12    17     3     4
+1     8  3529    16    50   137
+2    23     7  3970    62    28
+3     8    48    74  3506    40
+4     2   153    30    69  3669
+
+Model 96
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9511
+The Recall is:  0.9512
+The F1 score is:  0.9511
+The Matthews correlation coefficient is:  0.9390
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4060    10    23     1     1
+1     5  3484    22    60   169
+2    27    10  3937    89    27
+3    14    24   101  3471    66
+4     2   172    31    99  3619
+
+Model 97
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9670
+The Recall is:  0.9670
+The F1 score is:  0.9670
+The Matthews correlation coefficient is:  0.9588
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4068     6    14     4     3
+1    16  3559    11    43   111
+2    14    12  3983    57    24
+3     7    30    64  3530    45
+4     2   100    19    62  3740
+
+Model 98
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9639
+The Recall is:  0.9639
+The F1 score is:  0.9639
+The Matthews correlation coefficient is:  0.9548
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4063    11    10     6     5
+1    12  3568    17    33   110
+2    11     7  3947    97    28
+3     6    24    89  3511    46
+4     1    95    31    66  3730
+
+Model 99
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: GaussianNB GaussianNB()
+The Precision is:  0.4150
+The Recall is:  0.3713
+The F1 score is:  0.2551
+The Matthews correlation coefficient is:  0.2558
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  36   104  267  3333
+2  0   0  4072   18     0
+3  0   0  3106  560    10
+4  0   0   553  789  2581
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Model 100
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9516
+The Recall is:  0.9509
+The F1 score is:  0.9508
+The Matthews correlation coefficient is:  0.9389
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    28  3533    33    97    49
+2    65     1  3955    68     1
+3    31    12   203  3429     1
+4    51   174    75    52  3571
+
+Model 101
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9516
+The Recall is:  0.9509
+The F1 score is:  0.9508
+The Matthews correlation coefficient is:  0.9389
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4078    12     5     0     0
+1    28  3533    33    97    49
+2    65     1  3955    68     1
+3    31    12   203  3429     1
+4    51   174    75    52  3571
+
+Model 102
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9417
+The Recall is:  0.9405
+The F1 score is:  0.9403
+The Matthews correlation coefficient is:  0.9260
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    34  3498    49    99    60
+2    87     1  3929    72     1
+3    38    10   244  3382     2
+4    83   187    98    78  3477
+
+Model 103
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9417
+The Recall is:  0.9405
+The F1 score is:  0.9403
+The Matthews correlation coefficient is:  0.9260
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    34  3498    49    99    60
+2    87     1  3929    72     1
+3    38    10   244  3382     2
+4    83   187    98    78  3477
+
+Model 104
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9456
+The Recall is:  0.9447
+The F1 score is:  0.9445
+The Matthews correlation coefficient is:  0.9312
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    29  3490    42   114    65
+2    72     1  3944    72     1
+3    27     7   222  3418     2
+4    67   185    91    64  3516
+
+Model 105
+Scaler: StandardScaler() imputer: SimpleImputer() classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9456
+The Recall is:  0.9447
+The F1 score is:  0.9445
+The Matthews correlation coefficient is:  0.9312
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     5     0     0
+1    29  3490    42   114    65
+2    72     1  3944    72     1
+3    27     7   222  3418     2
+4    67   185    91    64  3516
+
+Model 106
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8138
+The Recall is:  0.8142
+The F1 score is:  0.8134
+The Matthews correlation coefficient is:  0.7678
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3536    10   298    76   175
+1    27  3384    39    19   271
+2   222    43  3341   318   166
+3   268    63   526  2554   265
+4   108   266   139   329  3081
+
+Model 107
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8237
+The Recall is:  0.8245
+The F1 score is:  0.8238
+The Matthews correlation coefficient is:  0.7806
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3590    10   245   107   143
+1    27  3412    38    20   243
+2   231    32  3367   304   156
+3   261    53   468  2624   270
+4    93   266   121   339  3104
+
+Model 108
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.8957
+The Recall is:  0.8953
+The F1 score is:  0.8953
+The Matthews correlation coefficient is:  0.8692
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3946    12   109    20     8
+1    37  3361    39    96   207
+2    97     6  3616   265   106
+3    74    17   280  3202   103
+4    74   178   132   184  3355
+
+Model 109
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.9603
+The Recall is:  0.9603
+The F1 score is:  0.9602
+The Matthews correlation coefficient is:  0.9503
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4050    10    32     3     0
+1    15  3546    19    49   111
+2    15    13  3951    82    29
+3    12    22    80  3508    54
+4     5   123    33    69  3693
+
+Model 110
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.9555
+The Recall is:  0.9555
+The F1 score is:  0.9555
+The Matthews correlation coefficient is:  0.9444
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4058    12    21     1     3
+1     7  3533    20    48   132
+2    11    11  3952    85    31
+3    18    19   110  3472    57
+4     4   150    39    89  3641
+
+Model 111
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.9462
+The Recall is:  0.9462
+The F1 score is:  0.9462
+The Matthews correlation coefficient is:  0.9328
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4056    10    23     3     3
+1     5  3502    22    62   149
+2    28    17  3904   102    39
+3    19    21   128  3442    66
+4     3   187    47   116  3570
+
+Model 112
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9630
+The Recall is:  0.9631
+The F1 score is:  0.9630
+The Matthews correlation coefficient is:  0.9538
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4073    11     8     3     0
+1    13  3548    16    49   114
+2    11    12  3969    71    27
+3    14    26    81  3510    45
+4     6   114    34    66  3703
+
+Model 113
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9665
+The Recall is:  0.9665
+The F1 score is:  0.9665
+The Matthews correlation coefficient is:  0.9580
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4065    10    17     2     1
+1    10  3581    13    18   118
+2     9     6  3970    87    18
+3     6    20    74  3524    52
+4     3   109    24    58  3729
+
+Model 114
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: GaussianNB GaussianNB()
+The Precision is:  0.4149
+The Recall is:  0.3710
+The F1 score is:  0.2550
+The Matthews correlation coefficient is:  0.2555
+
+This is the Confusion Matrix
+   0   1     2    3     4
+0  0   0  4082    0    13
+1  0  38   109  262  3331
+2  0   0  4072   18     0
+3  0   0  3109  557    10
+4  0   0   558  788  2577
+c:\Users\guilh\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Model 115
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9512
+The Recall is:  0.9505
+The F1 score is:  0.9503
+The Matthews correlation coefficient is:  0.9383
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     4     0     1
+1    29  3536    35    91    49
+2    66     2  3949    72     1
+3    34    11   208  3422     1
+4    54   172    72    52  3573
+
+Model 116
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9512
+The Recall is:  0.9505
+The F1 score is:  0.9503
+The Matthews correlation coefficient is:  0.9383
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4077    13     4     0     1
+1    29  3536    35    91    49
+2    66     2  3949    72     1
+3    34    11   208  3422     1
+4    54   172    72    52  3573
+
+Model 117
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9415
+The Recall is:  0.9403
+The F1 score is:  0.9401
+The Matthews correlation coefficient is:  0.9257
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4075    13     6     0     1
+1    36  3499    51    94    60
+2    86     2  3930    71     1
+3    44     9   248  3374     1
+4    82   189    98    74  3480
+
+Model 118
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9415
+The Recall is:  0.9403
+The F1 score is:  0.9401
+The Matthews correlation coefficient is:  0.9257
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4075    13     6     0     1
+1    36  3499    51    94    60
+2    86     2  3930    71     1
+3    44     9   248  3374     1
+4    82   189    98    74  3480
+
+Model 119
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9458
+The Recall is:  0.9450
+The F1 score is:  0.9448
+The Matthews correlation coefficient is:  0.9315
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4076    13     5     0     1
+1    31  3495    44   107    63
+2    69     1  3941    78     1
+3    30     6   225  3414     1
+4    67   185    87    60  3524
+
+Model 120
+Scaler: StandardScaler() imputer: SimpleImputer(strategy='median') classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9458
+The Recall is:  0.9450
+The F1 score is:  0.9448
+The Matthews correlation coefficient is:  0.9315
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4076    13     5     0     1
+1    31  3495    44   107    63
+2    69     1  3941    78     1
+3    30     6   225  3414     1
+4    67   185    87    60  3524
+
+Model 121
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=0.01)
+The Precision is:  0.8177
+The Recall is:  0.8196
+The F1 score is:  0.8181
+The Matthews correlation coefficient is:  0.7745
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3743    12   194    34   112
+1    20  3367    86    61   206
+2   191    54  3288   454   103
+3   236   138   509  2505   288
+4   116   296   140   273  3098
+
+Model 122
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: LogisticRegression LogisticRegression(C=1)
+The Precision is:  0.8265
+The Recall is:  0.8282
+The F1 score is:  0.8269
+The Matthews correlation coefficient is:  0.7853
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3752    12   184    46   101
+1    21  3387    79    45   208
+2   191    47  3321   432    99
+3   234   114   471  2555   302
+4   109   273   127   259  3155
+
+Model 123
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd10 DecisionTreeClassifier(max_depth=10)
+The Precision is:  0.7992
+The Recall is:  0.7969
+The F1 score is:  0.7962
+The Matthews correlation coefficient is:  0.7467
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3806    61   139    37    52
+1    50  3018   247   200   225
+2   185   181  3293   301   130
+3   120   289   453  2650   164
+4    69   479   399   185  2791
+
+Model 124
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_maxd20 DecisionTreeClassifier(max_depth=20)
+The Precision is:  0.8988
+The Recall is:  0.8988
+The F1 score is:  0.8987
+The Matthews correlation coefficient is:  0.8734
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3988    11    46    22    28
+1    21  3263    94   131   231
+2    37    66  3716   161   110
+3    26   147   185  3179   139
+4    31   190   171   129  3402
+
+Model 125
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl20 DecisionTreeClassifier(min_samples_leaf=5)
+The Precision is:  0.8879
+The Recall is:  0.8880
+The F1 score is:  0.8879
+The Matthews correlation coefficient is:  0.8599
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3973    15    50    17    40
+1    23  3243    93   160   221
+2    48    97  3641   204   100
+3    29   172   189  3158   128
+4    36   242   165   158  3322
+
+Model 126
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_minsl10 DecisionTreeClassifier(min_samples_leaf=10)
+The Precision is:  0.8717
+The Recall is:  0.8716
+The F1 score is:  0.8715
+The Matthews correlation coefficient is:  0.8395
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  3929    21    71    25    49
+1    17  3168   126   191   238
+2    56    75  3624   198   137
+3    42   186   229  3062   157
+4    49   249   218   172  3235
+
+Model 127
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critgini DecisionTreeClassifier()
+The Precision is:  0.9044
+The Recall is:  0.9045
+The F1 score is:  0.9044
+The Matthews correlation coefficient is:  0.8806
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4013    12    28    14    28
+1    22  3280    85   140   213
+2    37    71  3730   156    96
+3    19   147   180  3205   125
+4    31   186   124   150  3432
+
+Model 128
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: DecisionTree_critentropy DecisionTreeClassifier(criterion='entropy')
+The Precision is:  0.9098
+The Recall is:  0.9099
+The F1 score is:  0.9098
+The Matthews correlation coefficient is:  0.8873
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4005    25    28    15    22
+1    16  3317    80   148   179
+2    30    73  3747   159    81
+3    28   127   171  3223   127
+4    35   183   108   124  3473
+
+Model 129
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: GaussianNB GaussianNB()
+The Precision is:  0.6736
+The Recall is:  0.2060
+The F1 score is:  0.0775
+The Matthews correlation coefficient is:  0.0366
+
+This is the Confusion Matrix
+   0  1  2   3     4
+0  1  0  0  24  4070
+1  0  6  0  44  3690
+2  0  0  5  78  4007
+3  0  2  0  86  3588
+4  0  0  0   0  3923
+
+Model 130
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_balltree KNeighborsClassifier(algorithm='ball_tree', n_neighbors=3)
+The Precision is:  0.9348
+The Recall is:  0.9339
+The F1 score is:  0.9337
+The Matthews correlation coefficient is:  0.9176
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4061    12    20     0     2
+1    42  3432    70   129    67
+2    81    14  3876   116     3
+3    24    59   219  3366     8
+4   122   171    78    54  3498
+
+Model 131
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K3_kdtree KNeighborsClassifier(algorithm='kd_tree', n_neighbors=3)
+The Precision is:  0.9348
+The Recall is:  0.9339
+The F1 score is:  0.9337
+The Matthews correlation coefficient is:  0.9176
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4061    12    20     0     2
+1    42  3432    70   129    67
+2    81    14  3876   116     3
+3    24    59   219  3366     8
+4   122   171    78    54  3498
+
+Model 132
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree KNeighborsClassifier(algorithm='ball_tree')
+The Precision is:  0.9261
+The Recall is:  0.9245
+The F1 score is:  0.9242
+The Matthews correlation coefficient is:  0.9061
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4062    14    18     0     1
+1    42  3401    92   131    74
+2    95    10  3864   118     3
+3    31    60   260  3318     7
+4   151   182   113    72  3405
+
+Model 133
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree KNeighborsClassifier(algorithm='kd_tree')
+The Precision is:  0.9261
+The Recall is:  0.9245
+The F1 score is:  0.9242
+The Matthews correlation coefficient is:  0.9061
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4062    14    18     0     1
+1    42  3401    92   131    74
+2    95    10  3864   118     3
+3    31    60   260  3318     7
+4   151   182   113    72  3405
+
+Model 134
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_balltree_wdist KNeighborsClassifier(algorithm='ball_tree', weights='distance')
+The Precision is:  0.9318
+The Recall is:  0.9306
+The F1 score is:  0.9304
+The Matthews correlation coefficient is:  0.9136
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4062    13    18     1     1
+1    35  3393    91   141    80
+2    73     9  3892   114     2
+3    25    43   236  3364     8
+4   128   171    99    66  3459
+
+Model 135
+Scaler: StandardScaler() imputer: KNNImputer(n_neighbors=3) classifier: KNN_K5_kdtree_wdist KNeighborsClassifier(algorithm='kd_tree', weights='distance')
+The Precision is:  0.9318
+The Recall is:  0.9306
+The F1 score is:  0.9304
+The Matthews correlation coefficient is:  0.9136
+
+This is the Confusion Matrix
+      0     1     2     3     4
+0  4062    13    18     1     1
+1    35  3393    91   141    80
+2    73     9  3892   114     2
+3    25    43   236  3364     8
+4   128   171    99    66  3459
+
+--------------------------Results for Classification Models Performance--------------------------
+DecisionTree_critentropy  | precision     0.9675 | recall     0.9675 | f1     0.9675| mcc     0.9594
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_critentropy  | precision     0.9671 | recall     0.9671 | f1     0.9671| mcc     0.9589
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_critgini     | precision     0.9670 | recall     0.9670 | f1     0.9670| mcc     0.9588
+                          | scaler StandardScaler() | imputer SimpleImputer()
+DecisionTree_critgini     | precision     0.9668 | recall     0.9668 | f1     0.9668| mcc     0.9585
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_critentropy  | precision     0.9665 | recall     0.9665 | f1     0.9665| mcc     0.9580
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_critgini     | precision     0.9658 | recall     0.9658 | f1     0.9658| mcc     0.9573
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+DecisionTree_maxd20       | precision     0.9655 | recall     0.9655 | f1     0.9655| mcc     0.9569
+                          | scaler StandardScaler() | imputer SimpleImputer()
+DecisionTree_maxd20       | precision     0.9654 | recall     0.9654 | f1     0.9654| mcc     0.9568
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_critentropy  | precision     0.9647 | recall     0.9647 | f1     0.9647| mcc     0.9559
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_critgini     | precision     0.9646 | recall     0.9647 | f1     0.9646| mcc     0.9558
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd20       | precision     0.9639 | recall     0.9639 | f1     0.9639| mcc     0.9549
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+DecisionTree_critentropy  | precision     0.9639 | recall     0.9639 | f1     0.9639| mcc     0.9548
+                          | scaler StandardScaler() | imputer SimpleImputer()
+DecisionTree_critentropy  | precision     0.9638 | recall     0.9638 | f1     0.9638| mcc     0.9547
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+DecisionTree_critgini     | precision     0.9633 | recall     0.9633 | f1     0.9633| mcc     0.9541
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_critgini     | precision     0.9630 | recall     0.9631 | f1     0.9630| mcc     0.9538
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd20       | precision     0.9603 | recall     0.9603 | f1     0.9602| mcc     0.9503
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd20       | precision     0.9597 | recall     0.9596 | f1     0.9596| mcc     0.9495
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd20       | precision     0.9596 | recall     0.9596 | f1     0.9596| mcc     0.9495
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl20      | precision     0.9595 | recall     0.9595 | f1     0.9595| mcc     0.9493
+                          | scaler StandardScaler() | imputer SimpleImputer()
+DecisionTree_minsl20      | precision     0.9591 | recall     0.9591 | f1     0.9591| mcc     0.9489
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_minsl20      | precision     0.9573 | recall     0.9573 | f1     0.9573| mcc     0.9466
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+DecisionTree_minsl20      | precision     0.9567 | recall     0.9567 | f1     0.9567| mcc     0.9459
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K3_balltree           | precision     0.9571 | recall     0.9566 | f1     0.9565| mcc     0.9459
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+KNN_K3_kdtree             | precision     0.9571 | recall     0.9566 | f1     0.9565| mcc     0.9459
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_minsl20      | precision     0.9555 | recall     0.9555 | f1     0.9555| mcc     0.9444
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl20      | precision     0.9553 | recall     0.9553 | f1     0.9553| mcc     0.9442
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K3_balltree           | precision     0.9553 | recall     0.9547 | f1     0.9546| mcc     0.9435
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K3_kdtree             | precision     0.9553 | recall     0.9547 | f1     0.9546| mcc     0.9435
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl10      | precision     0.9511 | recall     0.9512 | f1     0.9511| mcc     0.9390
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K3_balltree           | precision     0.9517 | recall     0.9511 | f1     0.9510| mcc     0.9390
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K3_kdtree             | precision     0.9517 | recall     0.9511 | f1     0.9510| mcc     0.9390
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K3_balltree           | precision     0.9516 | recall     0.9509 | f1     0.9508| mcc     0.9389
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K3_kdtree             | precision     0.9516 | recall     0.9509 | f1     0.9508| mcc     0.9389
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K5_balltree_wdist     | precision     0.9514 | recall     0.9508 | f1     0.9507| mcc     0.9387
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+KNN_K5_kdtree_wdist       | precision     0.9514 | recall     0.9508 | f1     0.9507| mcc     0.9387
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+KNN_K3_balltree           | precision     0.9513 | recall     0.9507 | f1     0.9505| mcc     0.9385
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K3_kdtree             | precision     0.9513 | recall     0.9507 | f1     0.9505| mcc     0.9385
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl10      | precision     0.9505 | recall     0.9506 | f1     0.9505| mcc     0.9382
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+KNN_K3_balltree           | precision     0.9512 | recall     0.9505 | f1     0.9503| mcc     0.9383
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+KNN_K3_kdtree             | precision     0.9512 | recall     0.9505 | f1     0.9503| mcc     0.9383
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl10      | precision     0.9486 | recall     0.9486 | f1     0.9485| mcc     0.9357
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K5_balltree_wdist     | precision     0.9494 | recall     0.9486 | f1     0.9484| mcc     0.9359
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree_wdist       | precision     0.9494 | recall     0.9486 | f1     0.9484| mcc     0.9359
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl10      | precision     0.9462 | recall     0.9462 | f1     0.9462| mcc     0.9328
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl10      | precision     0.9459 | recall     0.9460 | f1     0.9459| mcc     0.9324
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree           | precision     0.9468 | recall     0.9459 | f1     0.9458| mcc     0.9326
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+KNN_K5_kdtree             | precision     0.9468 | recall     0.9459 | f1     0.9458| mcc     0.9326
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_minsl10      | precision     0.9455 | recall     0.9455 | f1     0.9454| mcc     0.9319
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree_wdist     | precision     0.9463 | recall     0.9455 | f1     0.9453| mcc     0.9321
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K5_kdtree_wdist       | precision     0.9463 | recall     0.9455 | f1     0.9453| mcc     0.9321
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K5_balltree_wdist     | precision     0.9458 | recall     0.9450 | f1     0.9448| mcc     0.9315
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree_wdist       | precision     0.9458 | recall     0.9450 | f1     0.9448| mcc     0.9315
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree_wdist     | precision     0.9458 | recall     0.9449 | f1     0.9448| mcc     0.9314
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree_wdist       | precision     0.9458 | recall     0.9449 | f1     0.9448| mcc     0.9314
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree_wdist     | precision     0.9456 | recall     0.9447 | f1     0.9445| mcc     0.9312
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K5_kdtree_wdist       | precision     0.9456 | recall     0.9447 | f1     0.9445| mcc     0.9312
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K5_balltree           | precision     0.9452 | recall     0.9441 | f1     0.9439| mcc     0.9304
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree             | precision     0.9452 | recall     0.9441 | f1     0.9439| mcc     0.9304
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree           | precision     0.9424 | recall     0.9413 | f1     0.9410| mcc     0.9269
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K5_kdtree             | precision     0.9424 | recall     0.9413 | f1     0.9410| mcc     0.9269
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+KNN_K5_balltree           | precision     0.9418 | recall     0.9406 | f1     0.9404| mcc     0.9261
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree             | precision     0.9418 | recall     0.9406 | f1     0.9404| mcc     0.9261
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+KNN_K5_balltree           | precision     0.9417 | recall     0.9405 | f1     0.9403| mcc     0.9260
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K5_kdtree             | precision     0.9417 | recall     0.9405 | f1     0.9403| mcc     0.9260
+                          | scaler StandardScaler() | imputer SimpleImputer()
+KNN_K5_balltree           | precision     0.9415 | recall     0.9403 | f1     0.9401| mcc     0.9257
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+KNN_K5_kdtree             | precision     0.9415 | recall     0.9403 | f1     0.9401| mcc     0.9257
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+KNN_K3_balltree           | precision     0.9353 | recall     0.9344 | f1     0.9342| mcc     0.9182
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K3_kdtree             | precision     0.9353 | recall     0.9344 | f1     0.9342| mcc     0.9182
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K3_balltree           | precision     0.9350 | recall     0.9340 | f1     0.9339| mcc     0.9178
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+KNN_K3_kdtree             | precision     0.9350 | recall     0.9340 | f1     0.9339| mcc     0.9178
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+KNN_K3_balltree           | precision     0.9348 | recall     0.9339 | f1     0.9337| mcc     0.9176
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K3_kdtree             | precision     0.9348 | recall     0.9339 | f1     0.9337| mcc     0.9176
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree_wdist     | precision     0.9327 | recall     0.9314 | f1     0.9312| mcc     0.9146
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree_wdist       | precision     0.9327 | recall     0.9314 | f1     0.9312| mcc     0.9146
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree_wdist     | precision     0.9318 | recall     0.9306 | f1     0.9304| mcc     0.9136
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree_wdist       | precision     0.9318 | recall     0.9306 | f1     0.9304| mcc     0.9136
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree_wdist     | precision     0.9315 | recall     0.9303 | f1     0.9301| mcc     0.9133
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree_wdist       | precision     0.9315 | recall     0.9303 | f1     0.9301| mcc     0.9133
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree           | precision     0.9261 | recall     0.9245 | f1     0.9242| mcc     0.9061
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree             | precision     0.9261 | recall     0.9245 | f1     0.9242| mcc     0.9061
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree           | precision     0.9258 | recall     0.9241 | f1     0.9239| mcc     0.9056
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree             | precision     0.9258 | recall     0.9241 | f1     0.9239| mcc     0.9056
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_balltree           | precision     0.9250 | recall     0.9234 | f1     0.9231| mcc     0.9047
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+KNN_K5_kdtree             | precision     0.9250 | recall     0.9234 | f1     0.9231| mcc     0.9047
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_critentropy  | precision     0.9128 | recall     0.9128 | f1     0.9128| mcc     0.8910
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_critentropy  | precision     0.9098 | recall     0.9099 | f1     0.9098| mcc     0.8873
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_critentropy  | precision     0.9080 | recall     0.9081 | f1     0.9080| mcc     0.8850
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd10       | precision     0.9073 | recall     0.9052 | f1     0.9054| mcc     0.8819
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_maxd10       | precision     0.9071 | recall     0.9051 | f1     0.9052| mcc     0.8817
+                          | scaler StandardScaler() | imputer SimpleImputer()
+DecisionTree_critgini     | precision     0.9044 | recall     0.9045 | f1     0.9044| mcc     0.8806
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_critgini     | precision     0.9042 | recall     0.9044 | f1     0.9043| mcc     0.8805
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd20       | precision     0.9035 | recall     0.9035 | f1     0.9034| mcc     0.8793
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd10       | precision     0.9053 | recall     0.9027 | f1     0.9030| mcc     0.8788
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+DecisionTree_critgini     | precision     0.9015 | recall     0.9017 | f1     0.9016| mcc     0.8771
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd20       | precision     0.8989 | recall     0.8989 | f1     0.8988| mcc     0.8736
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd20       | precision     0.8988 | recall     0.8988 | f1     0.8987| mcc     0.8734
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd10       | precision     0.8957 | recall     0.8953 | f1     0.8953| mcc     0.8692
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd10       | precision     0.8952 | recall     0.8948 | f1     0.8948| mcc     0.8685
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd10       | precision     0.8949 | recall     0.8945 | f1     0.8945| mcc     0.8682
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+DecisionTree_minsl20      | precision     0.8899 | recall     0.8900 | f1     0.8899| mcc     0.8625
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_minsl20      | precision     0.8879 | recall     0.8880 | f1     0.8879| mcc     0.8599
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_minsl20      | precision     0.8854 | recall     0.8855 | f1     0.8854| mcc     0.8569
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_minsl10      | precision     0.8717 | recall     0.8716 | f1     0.8715| mcc     0.8395
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_minsl10      | precision     0.8700 | recall     0.8699 | f1     0.8697| mcc     0.8374
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_minsl10      | precision     0.8696 | recall     0.8695 | f1     0.8695| mcc     0.8369
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8510 | recall     0.8518 | f1     0.8512| mcc     0.8147
+                          | scaler StandardScaler() | imputer SimpleImputer()
+LogisticRegression        | precision     0.8500 | recall     0.8510 | f1     0.8503| mcc     0.8137
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+LogisticRegression        | precision     0.8365 | recall     0.8373 | f1     0.8366| mcc     0.7967
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+LogisticRegression        | precision     0.8365 | recall     0.8372 | f1     0.8365| mcc     0.7965
+                          | scaler StandardScaler() | imputer SimpleImputer()
+LogisticRegression        | precision     0.8267 | recall     0.8283 | f1     0.8271| mcc     0.7854
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8265 | recall     0.8282 | f1     0.8269| mcc     0.7853
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8237 | recall     0.8245 | f1     0.8238| mcc     0.7806
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+LogisticRegression        | precision     0.8211 | recall     0.8219 | f1     0.8212| mcc     0.7774
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+LogisticRegression        | precision     0.8177 | recall     0.8196 | f1     0.8181| mcc     0.7745
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8172 | recall     0.8190 | f1     0.8176| mcc     0.7739
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8138 | recall     0.8142 | f1     0.8134| mcc     0.7678
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+LogisticRegression        | precision     0.8131 | recall     0.8136 | f1     0.8127| mcc     0.7670
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+DecisionTree_maxd10       | precision     0.8114 | recall     0.8073 | f1     0.8080| mcc     0.7597
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.8069 | recall     0.8075 | f1     0.8070| mcc     0.7593
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+DecisionTree_maxd10       | precision     0.7992 | recall     0.7969 | f1     0.7962| mcc     0.7467
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
+DecisionTree_maxd10       | precision     0.7943 | recall     0.7948 | f1     0.7937| mcc     0.7436
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.7919 | recall     0.7924 | f1     0.7916| mcc     0.7404
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+LogisticRegression        | precision     0.7759 | recall     0.7765 | f1     0.7738| mcc     0.7212
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+LogisticRegression        | precision     0.7687 | recall     0.7704 | f1     0.7691| mcc     0.7130
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+LogisticRegression        | precision     0.7661 | recall     0.7671 | f1     0.7640| mcc     0.7096
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+LogisticRegression        | precision     0.7557 | recall     0.7578 | f1     0.7557| mcc     0.6975
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+GaussianNB                | precision     0.4148 | recall     0.3724 | f1     0.2587| mcc     0.2572
+                          | scaler MinMaxScaler() | imputer SimpleImputer(strategy='median')
+GaussianNB                | precision     0.4146 | recall     0.3721 | f1     0.2583| mcc     0.2569
+                          | scaler PowerTransformer() | imputer SimpleImputer(strategy='median')
+GaussianNB                | precision     0.4142 | recall     0.3712 | f1     0.2560| mcc     0.2555
+                          | scaler PowerTransformer() | imputer SimpleImputer()
+GaussianNB                | precision     0.4143 | recall     0.3711 | f1     0.2559| mcc     0.2554
+                          | scaler MinMaxScaler() | imputer SimpleImputer()
+GaussianNB                | precision     0.4150 | recall     0.3713 | f1     0.2551| mcc     0.2558
+                          | scaler StandardScaler() | imputer SimpleImputer()
+GaussianNB                | precision     0.4149 | recall     0.3710 | f1     0.2550| mcc     0.2555
+                          | scaler StandardScaler() | imputer SimpleImputer(strategy='median')
+GaussianNB                | precision     0.6334 | recall     0.2168 | f1     0.0990| mcc     0.0823
+                          | scaler MinMaxScaler() | imputer KNNImputer(n_neighbors=3)
+GaussianNB                | precision     0.6144 | recall     0.2064 | f1     0.0783| mcc     0.0387
+                          | scaler PowerTransformer() | imputer KNNImputer(n_neighbors=3)
+GaussianNB                | precision     0.6736 | recall     0.2060 | f1     0.0775| mcc     0.0366
+                          | scaler StandardScaler() | imputer KNNImputer(n_neighbors=3)
