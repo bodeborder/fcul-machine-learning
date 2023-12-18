@@ -8,4 +8,7 @@ I will be deploying here my machine learning projects throughout the course.
 
 ## Project 2
 
+[Here](https://github.com/bodeborder/fcul-machine-learning/tree/main/2trabalho)
+
 ## Project 3
+[Here](https://github.com/bodeborder/fcul-machine-learning/tree/main/3trabalho)
